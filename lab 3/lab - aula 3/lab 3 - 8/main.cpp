@@ -19,4 +19,3 @@ int main()
     cout<<total;
     return 0;
 }
-git rm -r one-of-the-directories
