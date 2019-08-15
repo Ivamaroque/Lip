@@ -6,7 +6,6 @@ int main()
 {
     int n, m, cont;
     do{
-
         cout<<"Insira o valor de N: ";
         cin>>n;
         cout<<"Insira o valor de M: ";
