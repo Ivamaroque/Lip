@@ -13,14 +13,15 @@ int main()
         cin>>m;
         cont = m;
         cout<<"Contagem: ";
-        while(cont <= n){
-            cout<<cont<<" ";
-            cont++;
-        }
         if( n < m){
             while(cont >= n){
             cout<<cont<<" ";
             cont--;
+            }
+        } else{
+            while(cont <= n){
+                cout<<cont<<" ";
+                cont++;
             }
         }
         cout<<"| Fim da contagem."<<endl;
