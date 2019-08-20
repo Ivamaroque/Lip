@@ -1,18 +1,17 @@
 #include <iostream>
 #include <cmath>
 using namespace std;
-float volume(float r);
+float volume(int r);
 int main()
 {
-    float r, vol;
-    cout<<"Insira o raio: ";
+    float r, resultado;
+    cout<<"Insira o raio da esfera: ";
     cin>>r;
-    vol = volume(r);
-    cout<<"Seu volume eh: "<<vol<<endl;
+    resultado = volume(r);
+    cout<<"O volume do seu raio eh: "<<resultado<<"cm^3"<<endl;
     return 0;
 }
-float volume(float r){
-    float v;
-    v =(4/3)*3.14*pow(r,3);
-    return v;
+float volume(int r){
+    float resultado = (4*3.14*pow(r,3))/3;
+    return resultado;
 }
