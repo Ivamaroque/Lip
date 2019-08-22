@@ -13,8 +13,9 @@ int main()
 double serie(float x){
     double soma = 0.0;
     float n = 1.0;
-    float termo = 4.0/n;
     int i = 1;
+    float termo = pow(x,i)/n;
+ 
     while(termo > 0.0001){
         if(i%2 == 1){
             soma += termo;
