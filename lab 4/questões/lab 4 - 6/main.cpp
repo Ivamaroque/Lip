@@ -16,8 +16,8 @@ int main()
     return 0;
 }
 void ponto(float iex, float iey, float x, float y, float px, float py){
-    if(py <= y && py >= iey || py >= y && py <= iey){
-        if(px <= x && py >= iex || px >= x && py <= iex){
+    if(py <= y+iey && py >= iey || py >= y-iey && py <= iey){
+        if(px <= x+iex && py >= iex || px >= x-iex && py <= iex){
             cout<<"O ponto ("<<px<<","<<py<<") esta dentro do retangulo."<<endl;
         }
         else{
